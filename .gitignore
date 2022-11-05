@@ -10,4 +10,5 @@
 ###< symfony/framework-bundle ###
 
 
+/docker/db/
 /docker/db/**

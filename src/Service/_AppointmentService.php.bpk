@@ -1,0 +1,16 @@
+
+<?php
+
+namespace App\Service;
+
+use App\Repository\AppointmentRepository;
+
+class AppointmentService {
+
+    private AppointmentRepository $repository;
+
+    public function __construct(AppointmentRepository $repository)
+    {
+        $this->repository = $repository;
+    }
+}

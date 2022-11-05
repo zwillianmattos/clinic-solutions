@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Clinica Estímulos - {% block title %}{% endblock %}
+		</title>
+
+		<link href="https://fonts.googleapis.com/css?family=Work+Sans:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Fredericka+the+Great" rel="stylesheet">
+
+        <link rel="shortcut icon" type="image/x-icon" href="{{asset('institutional/images/logo.jpg')}}">
+
+		<link rel="stylesheet" href="{{asset('institutional/css/open-iconic-bootstrap.min.css')}}">
+		<link rel="stylesheet" href="{{asset('institutional/css/animate.css')}}">
+
+		<link rel="stylesheet" href="{{asset('institutional/css/owl.carousel.min.css')}}">
+		<link rel="stylesheet" href="{{asset('institutional/css/owl.theme.default.min.css')}}">
+		<link rel="stylesheet" href="{{asset('institutional/css/magnific-popup.css')}}">
+
+		<link rel="stylesheet" href="{{asset('institutional/css/aos.css')}}">
+
+		<link rel="stylesheet" href="{{asset('institutional/css/ionicons.min.css')}}">
+
+		<link rel="stylesheet" href="{{asset('institutional/css/flaticon.css')}}">
+		<link rel="stylesheet" href="{{asset('institutional/css/icomoon.css')}}">
+		<link rel="stylesheet" href="{{asset('institutional/css/style.css')}}">
+
+		{% block stylesheets %}
+			{{ encore_entry_link_tags('app') }}
+		{% endblock %}
+
+		{% block javascripts %}
+			{{ encore_entry_script_tags('app') }}
+		{% endblock %}
+	</head>
+	<body>
+		{% block body %}{% endblock %}
+
+		<script src="{{asset('institutional/js/jquery.min.js')}}"></script>
+		<script src="{{asset('institutional/js/jquery-migrate-3.0.1.min.js')}}"></script>
+		<script src="{{asset('institutional/js/popper.min.js')}}"></script>
+		<script src="{{asset('institutional/js/bootstrap.min.js')}}"></script>
+		<script src="{{asset('institutional/js/jquery.easing.1.3.js')}}"></script>
+		<script src="{{asset('institutional/js/jquery.waypoints.min.js')}}"></script>
+		<script src="{{asset('institutional/js/jquery.stellar.min.js')}}"></script>
+		<script src="{{asset('institutional/js/owl.carousel.min.js')}}"></script>
+		<script src="{{asset('institutional/js/jquery.magnific-popup.min.js')}}"></script>
+		<script src="{{asset('institutional/js/aos.js')}}"></script>
+		<script src="{{asset('institutional/js/jquery.animateNumber.min.js')}}"></script>
+		<script src="{{asset('institutional/js/scrollax.min.js')}}"></script>
+		<script src="{{asset('https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false')}}"></script>
+		<script src="{{asset('institutional/js/google-map.js')}}"></script>
+		<script src="{{asset('institutional/js/main.js')}}"></script>
+	</body>
+</html>
+

@@ -1,0 +1,30 @@
+version: '3'
+
+services:
+  mysql8:
+    container_name: clinic-solutions-mysql
+    image: mysql:8.0
+    cap_add:
+      - SYS_NICE
+    restart: always
+    environment:
+      - MYSQL_DATABASE=clinic-solutions
+      - MYSQL_ROOT_PASSWORD=root
+    ports:
+      - '3306:3306'
+    volumes:
+      - ./docker/db:/var/lib/mysql
+  php81:
+    container_name: clinic-solutions-env
+    build: ./docker/php81
+    ports:
+      - "9000:8000"
+    volumes:
+      - ./:/var/www/html
+  mailer:
+    image: schickling/mailcatcher
+    ports: [1025, 1080]
+
+volumes:
+  db:
+    driver: local

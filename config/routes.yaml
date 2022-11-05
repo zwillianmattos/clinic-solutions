@@ -1,3 +1,8 @@
-controllers:
-    resource: ../src/Controller/
+institutional:
+    resource: ../src/Controller/Institutional
     type: attribute
+
+admin:
+    resource: ../src/Controller/Admin
+    type: attribute
+    prefix: /admin
